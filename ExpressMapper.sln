@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper.Tests.Model", "ExpressMapper.Tests.Model\ExpressMapper.Tests.Model.csproj", "{9170A04C-8D4B-47A7-A6E3-7FC0F24244DD}"
 EndProject
@@ -15,15 +15,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarks", "Benchmarks\Be
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper NET46", "ExpressMapper Net46\ExpressMapper NET46.csproj", "{0B7A5BDB-6D9F-4A9E-A35D-081D0424D577}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper PCL NET45", "ExpressMapper PCL NET45\ExpressMapper PCL NET45.csproj", "{909366AD-7FF2-4197-A340-CC858C4B8AD1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper.Tests.Projections", "ExpressMapper.Tests.Projections\ExpressMapper.Tests.Projections.csproj", "{DD8BFECA-7F00-4AB2-B904-64682EA1C713}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ExpressMapper NETCORE", "ExpressMapper NETCORE\ExpressMapper NETCORE.xproj", "{969E6614-0489-4174-A735-CC66F51D8746}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressMapper NETCORE", "ExpressMapper NETCORE\ExpressMapper NETCORE.csproj", "{969E6614-0489-4174-A735-CC66F51D8746}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ExpressMapper.Tests.Model NETCORE", "ExpressMapper.Tests.Model NETCORE\ExpressMapper.Tests.Model NETCORE.xproj", "{4A70832D-08CA-4937-A64B-D0E010242838}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressMapper.Tests.Model NETCORE", "ExpressMapper.Tests.Model NETCORE\ExpressMapper.Tests.Model NETCORE.csproj", "{4A70832D-08CA-4937-A64B-D0E010242838}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ExpressMapper.Tests NETCORE", "ExpressMapper.Tests NETCORE\ExpressMapper.Tests NETCORE.xproj", "{58FDAB09-42F6-44C2-BC01-EBAFF4EBF765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressMapper.Tests NETCORE", "ExpressMapper.Tests NETCORE\ExpressMapper.Tests NETCORE.csproj", "{58FDAB09-42F6-44C2-BC01-EBAFF4EBF765}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper NET45", "ExpressMapper NET45\ExpressMapper NET45.csproj", "{5E211506-6D4E-4CD8-B454-D02672CF948A}"
 EndProject
@@ -34,7 +32,6 @@ Global
 		Expressmapper.Shared\Expressmapper.Shared.projitems*{0b7a5bdb-6d9f-4a9e-a35d-081d0424d577}*SharedItemsImports = 4
 		Expressmapper.Shared\Expressmapper.Shared.projitems*{5e211506-6d4e-4cd8-b454-d02672cf948a}*SharedItemsImports = 4
 		Expressmapper.Shared\Expressmapper.Shared.projitems*{75c7dd14-fd53-462d-9fb3-aa5e31380b55}*SharedItemsImports = 13
-		Expressmapper.Shared\Expressmapper.Shared.projitems*{909366ad-7ff2-4197-a340-cc858c4b8ad1}*SharedItemsImports = 4
 		Expressmapper.Shared\Expressmapper.Shared.projitems*{e701191e-bf2e-41b8-a4f0-3d8954e3dd58}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,10 +63,6 @@ Global
 		{0B7A5BDB-6D9F-4A9E-A35D-081D0424D577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B7A5BDB-6D9F-4A9E-A35D-081D0424D577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B7A5BDB-6D9F-4A9E-A35D-081D0424D577}.Release|Any CPU.Build.0 = Release|Any CPU
-		{909366AD-7FF2-4197-A340-CC858C4B8AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{909366AD-7FF2-4197-A340-CC858C4B8AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{909366AD-7FF2-4197-A340-CC858C4B8AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{909366AD-7FF2-4197-A340-CC858C4B8AD1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DD8BFECA-7F00-4AB2-B904-64682EA1C713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DD8BFECA-7F00-4AB2-B904-64682EA1C713}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD8BFECA-7F00-4AB2-B904-64682EA1C713}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -93,5 +86,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FE2DD6B-B9AF-45E9-B873-C8AE66CE5F56}
 	EndGlobalSection
 EndGlobal

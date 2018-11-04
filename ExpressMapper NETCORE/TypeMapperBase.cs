@@ -182,7 +182,7 @@ namespace ExpressMapper
             var castToCustomGeneric = Expression.Convert(Expression.Constant((ITypeMapper)this), customGenericType);
             var genVariable = Expression.Variable(customGenericType);
             var assignExp = Expression.Assign(genVariable, castToCustomGeneric);
-            var methodInfo = customGenericType.GetInfo().GetMethod("MapTo", new[] { typeof(T), typeof(TN) });
+            var methodInfo = customGenericType.GetMethod("MapTo", new[] { typeof(T), typeof(TN) });
 
             var mapCall = Expression.Call(genVariable, methodInfo, srcTypedExp, dstTypedExp);
             var resultVarExp = Expression.Variable(typeof(object), "result");
@@ -200,8 +200,12 @@ namespace ExpressMapper
 
         protected void AutoMapProperty(MemberInfo propertyGet, MemberInfo propertySet)
         {
-            var callSetPropMethod = propertySet.MemberType == MemberTypes.Field ? Expression.Field(DestFakeParameter, propertySet as FieldInfo) : Expression.Property(DestFakeParameter, propertySet as PropertyInfo);
-            var callGetPropMethod = propertyGet.MemberType == MemberTypes.Field ? Expression.Field(SourceParameter, propertyGet as FieldInfo) : Expression.Property(SourceParameter, propertyGet as PropertyInfo);
+            var callSetPropMethod = propertySet is FieldInfo propertySetField
+                ? Expression.Field(DestFakeParameter, propertySetField)
+                : Expression.Property(DestFakeParameter, propertySet as PropertyInfo);
+            var callGetPropMethod = propertyGet is FieldInfo propertyGetField
+                ? Expression.Field(SourceParameter, propertyGetField)
+                : Expression.Property(SourceParameter, propertyGet as PropertyInfo);
 
             MapMember(callSetPropMethod, callGetPropMethod);
         }
@@ -273,19 +277,15 @@ namespace ExpressMapper
         protected void ProcessAutoProperties()
         {
             var getFields =
-                typeof(T).GetInfo()
-                    .GetFields(BindingFlags.FlattenHierarchy | BindingFlags.Instance | BindingFlags.Public);
+                typeof(T).GetFields(BindingFlags.FlattenHierarchy | BindingFlags.Instance | BindingFlags.Public);
             var setFields =
-                typeof(TN).GetInfo()
-                    .GetFields(BindingFlags.FlattenHierarchy | BindingFlags.Instance | BindingFlags.Public);
+                typeof(TN).GetFields(BindingFlags.FlattenHierarchy | BindingFlags.Instance | BindingFlags.Public);
 
             var getProps =
-                typeof(T).GetInfo()
-                    .GetProperties(BindingFlags.FlattenHierarchy | BindingFlags.Instance | BindingFlags.Public);
+                typeof(T).GetProperties(BindingFlags.FlattenHierarchy | BindingFlags.Instance | BindingFlags.Public);
 
             var setProps =
-                typeof(TN).GetInfo()
-                    .GetProperties(BindingFlags.FlattenHierarchy | BindingFlags.Instance | BindingFlags.Public);
+                typeof(TN).GetProperties(BindingFlags.FlattenHierarchy | BindingFlags.Instance | BindingFlags.Public);
 
             var sourceMembers = getFields.Cast<MemberInfo>().Union(getProps);
             var destMembers = setFields.Cast<MemberInfo>().Union(setProps);
@@ -339,7 +339,7 @@ namespace ExpressMapper
                 }
                 else
                 {
-                    chosen = chosen.DeclaringType.GetInfo().IsAssignableFrom(notUniqueMember.DeclaringType)
+                    chosen = chosen.DeclaringType.IsAssignableFrom(notUniqueMember.DeclaringType)
                         ? notUniqueMember
                         : chosen;
                 }
@@ -560,7 +560,7 @@ namespace ExpressMapper
 
         protected override Expression VisitMember(MemberExpression node)
         {
-            return node.Member.DeclaringType.GetInfo().IsAssignableFrom(_replacementType)
+            return node.Member.DeclaringType.IsAssignableFrom(_replacementType)
                 ? Expression.PropertyOrField(_instanceExp, node.Member.Name)
                 : base.VisitMember(node);
         }

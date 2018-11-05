@@ -14,7 +14,7 @@ namespace ExpressMapper
             => type.GetInfo().ImplementedInterfaces;
 
         public static MethodInfo GetMethod(this Type type, string name, Type[] parameters = null)
-            => type.GetRuntimeMethod(name, parameters);
+            => type.GetRuntimeMethod(name, parameters ?? new Type[] { });
 
         public static IEnumerable<MethodInfo> GetMethods(this Type type)
             => type.GetRuntimeMethods();

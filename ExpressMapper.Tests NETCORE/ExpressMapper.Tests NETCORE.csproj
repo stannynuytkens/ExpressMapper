@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <AssemblyName>ExpressMapper.Tests NETCORE</AssemblyName>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <PackageId>ExpressMapper.Tests NETCORE</PackageId>
     <RuntimeFrameworkVersion>1.0.4</RuntimeFrameworkVersion>
     <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
@@ -11,6 +11,7 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <StartupObject></StartupObject>
+    <ApplicationIcon />
   </PropertyGroup>
 
   <ItemGroup>

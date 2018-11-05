@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp1.6</TargetFramework>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
     <AssemblyName>ExpressMapper.Tests NETCORE</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>ExpressMapper.Tests NETCORE</PackageId>
@@ -10,7 +10,16 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <StartupObject></StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Program.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ExpressMapper NETCORE\ExpressMapper NETCORE.csproj" />
@@ -19,8 +28,9 @@
 
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="4.14.0" />
-    <PackageReference Include="NUnit" Version="3.4.1" />
-    <PackageReference Include="NUnitLite" Version="3.4.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="NUnit" Version="3.11.0" />
+    <PackageReference Include="NUnitLite" Version="3.11.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp1.6' ">

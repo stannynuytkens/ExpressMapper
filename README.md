@@ -1,1 +1,3 @@
 An attempt to port [ExpressMapper](https://github.com/fluentsprings/ExpressMapper) to netstandard 1.2...
+
+[![Build Status](https://travis-ci.org/stannynuytkens/ExpressMapper.svg?branch=feature%2Fnetstandard12)](https://travis-ci.org/stannynuytkens/ExpressMapper)

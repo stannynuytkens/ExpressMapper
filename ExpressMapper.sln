@@ -3,35 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper.Tests.Model", "ExpressMapper.Tests.Model\ExpressMapper.Tests.Model.csproj", "{9170A04C-8D4B-47A7-A6E3-7FC0F24244DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper NET40", "ExpressMapper NET40\ExpressMapper NET40.csproj", "{E701191E-BF2E-41B8-A4F0-3D8954E3DD58}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper.Tests NET40", "ExpressMapper.Tests NET40\ExpressMapper.Tests NET40.csproj", "{C7A83FD8-079B-434F-A95B-46B2CF39BFE3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper.Tests NET45", "ExpressMapper.Tests NET45\ExpressMapper.Tests NET45.csproj", "{CE92C2E3-0465-4C58-9FC8-EBF683A96513}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarks", "Benchmarks\Benchmarks.csproj", "{DA9915F0-7F27-4E73-8AC0-422363E80A5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper NET46", "ExpressMapper Net46\ExpressMapper NET46.csproj", "{0B7A5BDB-6D9F-4A9E-A35D-081D0424D577}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressMapper", "ExpressMapper\ExpressMapper.csproj", "{969E6614-0489-4174-A735-CC66F51D8746}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper PCL NET45", "ExpressMapper PCL NET45\ExpressMapper PCL NET45.csproj", "{909366AD-7FF2-4197-A340-CC858C4B8AD1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper.Tests.Projections", "ExpressMapper.Tests.Projections\ExpressMapper.Tests.Projections.csproj", "{DD8BFECA-7F00-4AB2-B904-64682EA1C713}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressMapper NETCORE", "ExpressMapper NETCORE\ExpressMapper NETCORE.csproj", "{969E6614-0489-4174-A735-CC66F51D8746}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressMapper.Tests.Model NETCORE", "ExpressMapper.Tests.Model NETCORE\ExpressMapper.Tests.Model NETCORE.csproj", "{4A70832D-08CA-4937-A64B-D0E010242838}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressMapper.Tests NETCORE", "ExpressMapper.Tests NETCORE\ExpressMapper.Tests NETCORE.csproj", "{58FDAB09-42F6-44C2-BC01-EBAFF4EBF765}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressMapper NET45", "ExpressMapper NET45\ExpressMapper NET45.csproj", "{5E211506-6D4E-4CD8-B454-D02672CF948A}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Expressmapper.Shared", "Expressmapper.Shared\Expressmapper.Shared.shproj", "{75C7DD14-FD53-462D-9FB3-AA5E31380B55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressMapper.Tests.Model", "ExpressMapper.Tests.Model\ExpressMapper.Tests.Model.csproj", "{4A70832D-08CA-4937-A64B-D0E010242838}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B4A6D26A-0E12-4936-8B32-1BD80D6599E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{0668290F-383C-41DA-8D43-0D00F80A3C48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressMapper.Tests", "ExpressMapper.Tests\ExpressMapper.Tests.csproj", "{0668290F-383C-41DA-8D43-0D00F80A3C48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,38 +19,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9170A04C-8D4B-47A7-A6E3-7FC0F24244DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9170A04C-8D4B-47A7-A6E3-7FC0F24244DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9170A04C-8D4B-47A7-A6E3-7FC0F24244DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9170A04C-8D4B-47A7-A6E3-7FC0F24244DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E701191E-BF2E-41B8-A4F0-3D8954E3DD58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E701191E-BF2E-41B8-A4F0-3D8954E3DD58}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E701191E-BF2E-41B8-A4F0-3D8954E3DD58}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E701191E-BF2E-41B8-A4F0-3D8954E3DD58}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7A83FD8-079B-434F-A95B-46B2CF39BFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7A83FD8-079B-434F-A95B-46B2CF39BFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7A83FD8-079B-434F-A95B-46B2CF39BFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7A83FD8-079B-434F-A95B-46B2CF39BFE3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE92C2E3-0465-4C58-9FC8-EBF683A96513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE92C2E3-0465-4C58-9FC8-EBF683A96513}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE92C2E3-0465-4C58-9FC8-EBF683A96513}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE92C2E3-0465-4C58-9FC8-EBF683A96513}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DA9915F0-7F27-4E73-8AC0-422363E80A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DA9915F0-7F27-4E73-8AC0-422363E80A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA9915F0-7F27-4E73-8AC0-422363E80A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA9915F0-7F27-4E73-8AC0-422363E80A5A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B7A5BDB-6D9F-4A9E-A35D-081D0424D577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B7A5BDB-6D9F-4A9E-A35D-081D0424D577}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B7A5BDB-6D9F-4A9E-A35D-081D0424D577}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B7A5BDB-6D9F-4A9E-A35D-081D0424D577}.Release|Any CPU.Build.0 = Release|Any CPU
-		{909366AD-7FF2-4197-A340-CC858C4B8AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{909366AD-7FF2-4197-A340-CC858C4B8AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{909366AD-7FF2-4197-A340-CC858C4B8AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{909366AD-7FF2-4197-A340-CC858C4B8AD1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD8BFECA-7F00-4AB2-B904-64682EA1C713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD8BFECA-7F00-4AB2-B904-64682EA1C713}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD8BFECA-7F00-4AB2-B904-64682EA1C713}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD8BFECA-7F00-4AB2-B904-64682EA1C713}.Release|Any CPU.Build.0 = Release|Any CPU
 		{969E6614-0489-4174-A735-CC66F51D8746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{969E6614-0489-4174-A735-CC66F51D8746}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{969E6614-0489-4174-A735-CC66F51D8746}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -79,14 +31,6 @@ Global
 		{4A70832D-08CA-4937-A64B-D0E010242838}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A70832D-08CA-4937-A64B-D0E010242838}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A70832D-08CA-4937-A64B-D0E010242838}.Release|Any CPU.Build.0 = Release|Any CPU
-		{58FDAB09-42F6-44C2-BC01-EBAFF4EBF765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{58FDAB09-42F6-44C2-BC01-EBAFF4EBF765}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{58FDAB09-42F6-44C2-BC01-EBAFF4EBF765}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{58FDAB09-42F6-44C2-BC01-EBAFF4EBF765}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E211506-6D4E-4CD8-B454-D02672CF948A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E211506-6D4E-4CD8-B454-D02672CF948A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E211506-6D4E-4CD8-B454-D02672CF948A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E211506-6D4E-4CD8-B454-D02672CF948A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0668290F-383C-41DA-8D43-0D00F80A3C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0668290F-383C-41DA-8D43-0D00F80A3C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0668290F-383C-41DA-8D43-0D00F80A3C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -96,12 +40,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{9170A04C-8D4B-47A7-A6E3-7FC0F24244DD} = {B4A6D26A-0E12-4936-8B32-1BD80D6599E1}
-		{C7A83FD8-079B-434F-A95B-46B2CF39BFE3} = {B4A6D26A-0E12-4936-8B32-1BD80D6599E1}
-		{CE92C2E3-0465-4C58-9FC8-EBF683A96513} = {B4A6D26A-0E12-4936-8B32-1BD80D6599E1}
-		{DD8BFECA-7F00-4AB2-B904-64682EA1C713} = {B4A6D26A-0E12-4936-8B32-1BD80D6599E1}
 		{4A70832D-08CA-4937-A64B-D0E010242838} = {B4A6D26A-0E12-4936-8B32-1BD80D6599E1}
-		{58FDAB09-42F6-44C2-BC01-EBAFF4EBF765} = {B4A6D26A-0E12-4936-8B32-1BD80D6599E1}
 		{0668290F-383C-41DA-8D43-0D00F80A3C48} = {B4A6D26A-0E12-4936-8B32-1BD80D6599E1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

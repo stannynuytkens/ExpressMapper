@@ -6,3 +6,6 @@ install:
 script:
   - xbuild /p:Configuration=Release ExpressMapper.sln
   - mono ./testrunner/NUnit.ConsoleRunner.3.4.1/tools/nunit3-console.exe "./ExpressMapper.Tests/bin/Release/ExpressMapper.Tests.dll"
+branches:
+  only:
+  - /.*/
